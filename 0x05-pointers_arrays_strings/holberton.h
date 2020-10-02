@@ -3,3 +3,6 @@ int _putchar(char c);
 
 /* reset to 98 function */
 void reset_to_98(int *n);
+
+/* swaps integers */
+void swap_int(int *a, int *b);
