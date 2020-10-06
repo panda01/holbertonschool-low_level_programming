@@ -9,8 +9,6 @@
 int _strlen(char *s)
 {
 	/* s = "Hello"; */
-	/* s[0] = 'H' */
-	/* s[4] = 'o' */
 	int arrayIndex;
 
 	arrayIndex = 0;

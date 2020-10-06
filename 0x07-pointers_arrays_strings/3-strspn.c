@@ -35,3 +35,20 @@ unsigned int _strspn(char *s, char *accept)
 
 	return (idx);
 }
+
+/**
+ * length - Give us the length of a string
+ * @s: the string to get the length from
+ *
+ * Return: length of string
+ */
+unsigned int length(char *s)
+{
+	unsigned int idx = 0;
+
+	while (s[idx] != '\0')
+	{
+		idx++;
+	}
+	return (idx);
+}

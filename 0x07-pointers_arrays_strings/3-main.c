@@ -18,14 +18,3 @@ int main(void)
 
 	return (0);
 }
-
-unsigned int length(char *s)
-{
-	unsigned int idx = 0;
-
-	while(s[idx] != '\0')
-	{
-		idx++;
-	}
-	return idx;
-}
