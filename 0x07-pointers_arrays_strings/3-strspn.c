@@ -2,7 +2,7 @@
 
 
 /**
- * _strspn: tell me sometthing good
+ * _strspn - tell me sometthing good
  * @s: haystack
  * @accept: needles
  *
