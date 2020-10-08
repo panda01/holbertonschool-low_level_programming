@@ -1,6 +1,5 @@
 #include "holberton.h"
 
-
 /**
  * _strspn - tell me sometthing good
  * @s: haystack
@@ -18,19 +17,20 @@ unsigned int _strspn(char *s, char *accept)
 
 	while (idx < s_length)
 	{
-		letter_was_found = 0;
+		letter_was_found = 0; /* 0 = false  */
 		for (j = 0; j < accept_length; j++)
 		{
 			if (s[idx] == accept[j])
 			{
-				letter_was_found = 1;
+				letter_was_found = 1; /* set letter_was_found to true */
+				continue;
 			}
 		}
 		if (!letter_was_found)
 		{
 			return (idx);
 		}
-		++idx;
+		idx++;
 	}
 
 	return (idx);
