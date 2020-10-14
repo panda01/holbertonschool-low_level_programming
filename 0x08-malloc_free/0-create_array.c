@@ -12,8 +12,10 @@
 
 char *create_array(unsigned int size, char c)
 {
-	char *array_of_chars = malloc(size * 4);
+	char *array_of_chars = malloc(size);
 	unsigned int index = 0;
+
+	printf("%lu", sizeof(c));
 
 	if (size == 0)
 	{
