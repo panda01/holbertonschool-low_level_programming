@@ -57,8 +57,19 @@ dog_t *new_dog(char *name, float age, char *owner)
 	}
 
 	lassie->name = strcopy(name);
+	if (lassie->name == NULL)
+	{
+		free(lassie);
+		return (NULL);
+	}
 	lassie->age = age;
 	lassie->owner = strcopy(owner);
+	if (lassie->owner == NULL)
+	{
+		free(lassie->name);
+		free(lassie);
+		return (NULL);
+	}
 
 	return (lassie);
 }
